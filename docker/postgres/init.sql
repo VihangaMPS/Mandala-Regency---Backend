@@ -1,1 +1,1 @@
-CREATE DATABASE guest;
+CREATE DATABASE bookings;

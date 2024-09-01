@@ -1,0 +1,11 @@
+
+server:
+  port: 8020
+spring:
+  application:
+    name: cabin-service
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: cabin
