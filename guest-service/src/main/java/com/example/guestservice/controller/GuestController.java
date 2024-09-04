@@ -19,15 +19,7 @@ import java.util.List;
 @Slf4j
 public class GuestController {
 
-    private final GuestRepository guestRepository;
     private final GuestService guestService;
-
-    @PostMapping("/test")
-    public Guest save(@RequestBody Guest guest) {
-        log.info("Guest saved: {}", guest);
-        return guestRepository.save(guest);
-    }
-
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
@@ -47,7 +39,7 @@ public class GuestController {
         return guestService.save(guestRequest);
     }
 
-    @DeleteMapping
+    @DeleteMapping("/{customerId}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void deleteGuestById(@PathVariable("customerId") int customerId) {
         guestService.delete(customerId);

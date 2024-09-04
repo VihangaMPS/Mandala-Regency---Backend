@@ -1,1 +1,1 @@
-CREATE DATABASE bookings;
+CREATE DATABASE cabins;

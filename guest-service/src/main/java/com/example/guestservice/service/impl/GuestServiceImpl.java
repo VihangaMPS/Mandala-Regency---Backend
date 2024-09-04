@@ -37,10 +37,10 @@ public class GuestServiceImpl implements GuestService {
 
     @Override
     public GuestResponse save(GuestRequest guestRequest) {
-        log.info("Saving guest {}", guestRequest);
 
         Guest guest = guestRepository.save(mapper.toGuest(guestRequest));
         log.info("Saved guest {}", guest);
+
         return new GuestResponse(
                 guest.getId(),
                 guest.getFullName(),
