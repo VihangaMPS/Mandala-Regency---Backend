@@ -35,9 +35,6 @@ public class CabinController {
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public Integer createCabin(@RequestBody @Valid CabinRequest cabinRequest) throws IOException {
-
-        log.info("Cabin request: {}", cabinRequest);
-
         return cabinService.saveCabin(cabinRequest);
     }
 }

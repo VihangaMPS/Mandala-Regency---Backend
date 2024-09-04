@@ -35,8 +35,6 @@ public class CabinServiceImpl implements CabinService {
     @Override
     public Integer saveCabin(CabinRequest cabinRequest) {
 
-        log.info("Save cabin {}", cabinRequest);
-
         Cabin cabin = cabinMapper.toCabin(cabinRequest);
         log.info("Saving cabin {}", cabin);
 

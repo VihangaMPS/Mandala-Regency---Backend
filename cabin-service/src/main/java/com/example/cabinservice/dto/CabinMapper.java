@@ -28,7 +28,6 @@ public class CabinMapper {
                 cabin.getName(),
                 cabin.getPrice(),
                 cabin.getGuestcount(),
-                cabin.getCategory().getId(),
                 cabin.getCategory().getName(),
                 cabin.getCategory().getDescription()
         );

@@ -8,7 +8,6 @@ public record CabinResponse (
         BigDecimal cabinPrice,
         int guestCount,
 
-        Integer categoryId,
         String categoryName,
         String categoryDescription
 ){
