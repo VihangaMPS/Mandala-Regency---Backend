@@ -1,0 +1,14 @@
+# To prevent overriding the sub files extends the main property file
+spring:
+  cloud:
+    config:
+      override-system-properties: false
+
+# Connecting with Discovery server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+
